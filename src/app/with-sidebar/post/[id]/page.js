@@ -1,12 +1,10 @@
-import { fetchPostByID } from '@/app/lib/fetchPostByID';
-import { fetchAllPosts } from '@/app/lib/fetchAllPosts';
+import { fetchPostByID, fetchAllPosts } from '@/app/lib/route';
 import Link from 'next/link';
 import Image from 'next/image';
 
 export default async function Post({ params }) {
   const postId = params.id;
 
-  
   if (typeof postId !== 'string') {
     throw new Error('Invalid post ID parameter');
   }

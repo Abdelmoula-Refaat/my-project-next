@@ -1,5 +1,3 @@
-// app/with-sidebar/[...all].js
-
 import Link from 'next/link';
 
 export default function CatchAll({ params }) {

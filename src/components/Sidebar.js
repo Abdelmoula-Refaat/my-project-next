@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FaSignInAlt, FaInfoCircle, FaEnvelope, FaBlog } from 'react-icons/fa';
+import { FaSignInAlt, FaInfoCircle, FaEnvelope, FaBlog ,FaPlus } from 'react-icons/fa';
 
 export default function Sidebar() {
   return (
@@ -27,6 +27,11 @@ export default function Sidebar() {
           <li className="nav-item">
             <Link href="/with-sidebar/blog" className="nav-link">
               <FaBlog className="me-2" /> Blog
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link href="/with-sidebar/addPost" className="nav-link">
+              <FaPlus className="me-2" /> Add Post
             </Link>
           </li>
         </ul>

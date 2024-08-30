@@ -1,5 +1,4 @@
-import { fetchAllPosts } from '@/app/lib/fetchAllPosts';
-
+import { fetchAllPosts } from '@/app/lib/route';
 import PostCard from '@/components/PostCard';
 
 export default async function Blog() {
@@ -22,3 +21,4 @@ export default async function Blog() {
     </div>
   );
 }
+
