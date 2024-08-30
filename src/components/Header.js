@@ -1,7 +1,32 @@
 export default function Header() {
   return (
-    <header className="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-      <a className="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">MyApp</a>
+    <header className="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
+      <div className="container-fluid">
+        <a className="navbar-brand" href="#">
+          
+          MyApp
+        </a>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ms-auto">
+            <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">Features</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">Pricing</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
   );
 }
+
